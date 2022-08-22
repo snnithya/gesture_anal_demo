@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>snnithya.github.io/gesture_analysis_demo/suppl/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/suppl/</loc>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/suppl/dataset/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/suppl/dataset/</loc>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/suppl/experiments/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/suppl/experiments/</loc>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/suppl/commentaries/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/suppl/commentaries/</loc>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/categories/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/categories/</loc>
   </url><url>
-    <loc>snnithya.github.io/gesture_analysis_demo/tags/</loc>
+    <loc>https://snnithya.github.io/gesture_analysis_demo/tags/</loc>
   </url>
 </urlset>
