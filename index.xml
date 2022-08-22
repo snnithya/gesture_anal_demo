@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</title>
+    <link>https://snnithya.github.io/gesture_anal_demo/</link>
+    <description>Recent content in Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://snnithya.github.io/gesture_anal_demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dataset</title>
+      <link>https://snnithya.github.io/gesture_anal_demo/suppl/dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://snnithya.github.io/gesture_anal_demo/suppl/dataset/</guid>
+      <description>This file contains details about the dataset used and information about our train-val splits.</description>
+    </item>
+    
+    <item>
+      <title>Experiments &amp; Results</title>
+      <link>https://snnithya.github.io/gesture_anal_demo/suppl/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://snnithya.github.io/gesture_anal_demo/suppl/experiments/</guid>
+      <description>This file contains our experiments and results in further detail.</description>
+    </item>
+    
+    <item>
+      <title>Qualitative analysis of our results</title>
+      <link>https://snnithya.github.io/gesture_anal_demo/suppl/commentaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://snnithya.github.io/gesture_anal_demo/suppl/commentaries/</guid>
+      <description>We have selected 6 takes from the validation set in the ‘seen singer’ condition which illustrate some of the features of the classification performance. Commentaries complement the prediction accuracy statistics with qualitative observations which may indicate ways in which the systems are classifying the ragas in different modalities. Predictions are overlaid on the video, green when correct and red when incorrect, with probabilities output by the models in parentheses.
+The selected videos are listed below:</description>
+    </item>
+    
+  </channel>
+</rss>
