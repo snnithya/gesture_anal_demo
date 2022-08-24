@@ -7,11 +7,11 @@
   <title>Experiments &amp; Results - Hugo Whisper Theme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="gesture_analysis_demo/favicon.png">
+  <link rel="icon" href="/favicon.png">
 
   
   
-  <link rel="stylesheet" href="/gesture_analysis_demo/css/style.min.4ab4803ae3615466c1fb683c1b28dbc2c37df7d014396287cda3146436bf93d4.css">
+  <link rel="stylesheet" href="/css/style.min.ba7c70780b880261622082b3bf81b5168bc8411e7467705ff3ab192994cd2227.css">
   
 
   
@@ -24,19 +24,19 @@
     
     
     <li class="menu-item-home">
-      <a href="gesture_analysis_demo/">
+      <a href="/">
         <span>Home</span>
       </a>
     </li>
     
     <li class="menu-item-supplementary material">
-      <a href="gesture_analysis_demo/suppl/">
+      <a href="/suppl/">
         <span>Supplementary Material</span>
       </a>
     </li>
     
     <li class="menu-item-about">
-      <a href="gesture_analysis_demo/about/">
+      <a href="/about/">
         <span>About</span>
       </a>
     </li>
@@ -45,45 +45,43 @@
 </div>
   <div class="wrapper">
     <div class='header'>
-  <div class="container">
-    <div class="logo">
-      <a href="gesture_analysis_demo"><img alt="Logo" src="/gesture_analysis_demo/images/logo.svg" /></a>
-    </div>
-    <div class="logo-mobile">
-      <a href="gesture_analysis_demo"><img alt="Logo" src="/gesture_analysis_demo/images/logo-mobile.svg" /></a>
-    </div>
-    <div id="main-menu" class="main-menu">
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img alt="Logo" src="/images/logo.svg" style="width:250px; padding-bottom: 10px;" /></a>
+        </div>
+        <div class="logo-mobile">
+            <a href="/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+        </div>
+        <div id="main-menu" class="main-menu">
   <ul>
     
     
     <li class="menu-item-home">
-      <a href="gesture_analysis_demo/">
+      <a href="/">
         <span>Home</span>
       </a>
     </li>
     
     <li class="menu-item-supplementary material">
-      <a href="gesture_analysis_demo/suppl/">
+      <a href="/suppl/">
         <span>Supplementary Material</span>
       </a>
     </li>
     
     <li class="menu-item-about">
-      <a href="gesture_analysis_demo/about/">
+      <a href="/about/">
         <span>About</span>
       </a>
     </li>
     
   </ul>
-</div>
-    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+</div> <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
 </button>
-  </div>
+    </div>
 </div>
-
 
     
     
@@ -99,35 +97,1150 @@
           <div class="sidebar">
             
 <div class="docs-menu">
-  <h4>Suppl</h4>
-  <ul>
-    
-    <li class="">
-      <a href="gesture_analysis_demo/suppl/dataset/">Dataset</a>
-    </li>
-    
-    <li class="active ">
-      <a href="gesture_analysis_demo/suppl/experiments/">Experiments &amp; Results</a>
-    </li>
-    
-    <li class="">
-      <a href="gesture_analysis_demo/suppl/commentaries/">Qualitative analysis of our results</a>
-    </li>
-    
-  </ul>
+    <h4><a href="/suppl/">Experiments &amp; results</a></h4>
+    <ul>
+        
+        <li class="">
+            <a href="/suppl/dataset/">Dataset</a>
+        </li>
+        
+        <li class="active ">
+            <a href="/suppl/experiments/">Experiments &amp; Results</a>
+        </li>
+        
+        <li class="">
+            <a href="/suppl/commentaries/">Qualitative analysis of our results</a>
+        </li>
+        
+    </ul>
 </div>
-
           </div>
         </div>
         <div class="col-12 col-md-9">
-          
-<h1 class="title">Experiments &amp; Results</h1>
-<div class="content " style="text-align: justify;">
-    <p>This <a href="">file</a> contains our experiments and results in further detail.</p>
+           
+<a class="button overview" href="./Experiments%20and%20Results%20Details.pdf">View as pdf</a> 
+<div class="container">
+    <h1 class="title">Experiments &amp; Results</h1>
+    <div class="content  " style="text-align: justify; ">
+        <h1 id="hyperparameter-search-ranges">Hyperparameter search ranges</h1>
+<p>The tables below list the ranges over which the individual hyperparameters corresponding to the model types listed in <strong>Table 5</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Modality     (Model Type)</strong></th>
+<th><strong>Convolution Layers</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>Pooling layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td># filters</td>
+<td>Kernel size</td>
+<td>Common kernel size (k)</td>
+<td># filters</td>
+<td>Pool size</td>
+<td>Pooling type</td>
+<td>Dropout rate</td>
+<td>pooling type</td>
+</tr>
+<tr>
+<td>audio (B)</td>
+<td>{4, 8, 16, 32, 64, 128, 256}</td>
+<td>{3, 5, 7, 9, 10}</td>
+<td>{3, 5, 7, 9, 10}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+<tr>
+<td>video (A)</td>
+<td>{16, 32, 64, 128}</td>
+<td>{3, 5, 7}</td>
+<td>{3, 5, 7}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+<tr>
+<td>source fusion (C)</td>
+<td>{16, 32, 64, 128}</td>
+<td>{3, 5, 7}</td>
+<td>{3, 5, 7}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S4a:</strong> Hyperparameter search ranges for the unimodal audio, video and source fusion methods, viz. model types A, B and C in Table 5.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Modality     (Model Type)</strong></th>
+<th><strong>Convolution Layers</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td># filters</td>
+<td>Kernel size</td>
+<td>Common kernel size (k)</td>
+<td># filters</td>
+<td>Pool size</td>
+<td>Pooling type</td>
+<td>Dropout rate</td>
+<td>pooling type</td>
+</tr>
+<tr>
+<td>audio (B)</td>
+<td>{4, 8, 16, 32, 64, 128, 256}</td>
+<td>{3, 5, 7, 9, 10}</td>
+<td>{3, 5, 7, 9, 10}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+<tr>
+<td>video (A)</td>
+<td>{16, 32, 64, 128}</td>
+<td>{3, 5, 7}</td>
+<td>{3, 5, 7}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+<tr>
+<td>source fusion (C)</td>
+<td>{16, 32, 64, 128}</td>
+<td>{3, 5, 7}</td>
+<td>{3, 5, 7}</td>
+<td>[4, 32]</td>
+<td>{3, 5}</td>
+<td>{Max, Average}</td>
+<td>{0.3, 0.4, 0.5, 0.6, 0.7}</td>
+<td>{Max, Average}</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S4b:</strong> Hyperparameter search ranges for the latent fusion method, viz. model type D in Table 5.</p>
+<table>
+<thead>
+<tr>
+<th>Modality</th>
+<th>Model</th>
+<th>Hyperparameters</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Parameter name</td>
+<td>Parameter values</td>
+</tr>
+<tr>
+<td>Late fusion</td>
+<td><strong>Logistic regression</strong></td>
+<td>Penalty</td>
+<td>&lsquo;l2&rsquo;,&lsquo;l1&rsquo;,&lsquo;elasticnet&rsquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Regularization constant</td>
+<td>0.001-100 in GP of 10</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Random Forest (RF)</strong></td>
+<td>Num estimators</td>
+<td>10,25,50,75,100</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Max depth</td>
+<td>3,5,7</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Max features</td>
+<td>&lsquo;auto&rsquo;, &lsquo;sqrt&rsquo;, &lsquo;log2&rsquo;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Support Vector Machine (SVM)</strong></td>
+<td>Regularization constant</td>
+<td>0.001-100 in GP of 10</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Kernel</td>
+<td>&ldquo;rbf&rdquo;,&ldquo;linear&rdquo;,&ldquo;poly&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Gamma</td>
+<td>0.001-100 in GP of 10</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Polynomial degree</td>
+<td>2,3</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>XGBoost</strong></td>
+<td>Learning rate</td>
+<td>0.01,0.05</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>max_depth</td>
+<td>2,4,6</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Min_child_weight</td>
+<td>9,11</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>subsample</td>
+<td>0.7,0.8</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>colsample_bytree</td>
+<td>0.7,0.5,0.6</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>n_estimators</td>
+<td>10-100 in steps of 10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S4c:</strong> Hyperparameter search ranges for late fusion method, viz. Model type E1, E2 in Table 5. All models except XGBoost were trained using sklearn and hyperparameter tuning done by grid search cv. XGboost was trained with xgboost package.</p>
+<p>Due to space constraints only Random Forest results are mentioned in Table 5 of the paper.</p>
+<h1 id="tuned-hyperparameters">Tuned hyperparameters</h1>
+<p>Legend:</p>
+<p>The below listed variable names are used in the following tables in this section</p>
+<ol>
+<li>Conv block
+<ol>
+<li>n – Number of filters</li>
+<li>k – kernel size</li>
+</ol>
+</li>
+<li>Inception block
+Refer to <strong>Figure 3</strong> in the paper for the meaning of each variable name</li>
+<li>Pooling layer
+<ol>
+<li>P – type of pooling</li>
+</ol>
+</li>
+</ol>
+<h2 id="tuned-hyperparameters-for-video-classification-task-on-seen-singer-split">Tuned hyperparameters for video classification task on seen singer split</h2>
+<p>Information of the model and hyperparameters for the <strong>third column (Seen singer, Video) in Table 4</strong>  and <strong>model type A in Table 5</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Model size</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>21869</td>
+<td>21323</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>10333</td>
+<td>9993</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>19010</td>
+<td>18490</td>
+<td>0.39</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5A1a:</strong> Size of models used for unimodal video classification on the seen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Conv block - 1</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>n</td>
+<td>k</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>128</td>
+<td>7</td>
+<td>12</td>
+<td>32</td>
+<td>21</td>
+<td>14</td>
+<td>25</td>
+<td>22</td>
+<td>31</td>
+<td>7</td>
+<td>3</td>
+<td>Max</td>
+<td>0.3</td>
+<td>Max</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>128</td>
+<td>7</td>
+<td>10</td>
+<td>29</td>
+<td>28</td>
+<td>24</td>
+<td>18</td>
+<td>28</td>
+<td>31</td>
+<td>7</td>
+<td>3</td>
+<td>Avg</td>
+<td>0.6</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>128</td>
+<td>7</td>
+<td>9</td>
+<td>25</td>
+<td>10</td>
+<td>17</td>
+<td>23</td>
+<td>27</td>
+<td>30</td>
+<td>7</td>
+<td>3</td>
+<td>Max</td>
+<td>0.3</td>
+<td>Max</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5A1b:</strong> Hyperparameters of models used for unimodal video classification on the seen singer split</p>
+<h2 id="tuned-hyperparameters-for-video-classification-task-on-unseen-singer-split">Tuned hyperparameters for video classification task on unseen singer split</h2>
+<p>Information of the model and hyperparameters for the <strong>fifth column (Unseen singer, Audio) in Table 4</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>**Model size   **</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>9479</td>
+<td>9169</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>16331</td>
+<td>15871</td>
+<td>0.36</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>5957</td>
+<td>5721</td>
+<td>0.24</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5A2a:</strong> Size of models used for unimodal video classification on the unseen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Conv block - 1</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>n</td>
+<td>k</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>16</td>
+<td>7</td>
+<td>21</td>
+<td>9</td>
+<td>32</td>
+<td>20</td>
+<td>16</td>
+<td>30</td>
+<td>32</td>
+<td>5</td>
+<td>5</td>
+<td>Max</td>
+<td>0.7</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>128</td>
+<td>5</td>
+<td>22</td>
+<td>11</td>
+<td>9</td>
+<td>28</td>
+<td>31</td>
+<td>17</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>Max</td>
+<td>0.6</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>16</td>
+<td>7</td>
+<td>18</td>
+<td>5</td>
+<td>26</td>
+<td>15</td>
+<td>22</td>
+<td>19</td>
+<td>15</td>
+<td>5</td>
+<td>3</td>
+<td>Avg</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5A2b:</strong> Hyperparameters of models used for unimodal video classification on the unseen singer split</p>
+<h2 id="tuned-hyperparameters-for-audio-classification-task-on-seen-singer-split">Tuned hyperparameters for audio classification task on seen singer split</h2>
+<p>Information of the model and hyperparameters for the <strong>second column (Seen singer, Audio) in Table 4</strong>  and <strong>model type B in Table 5</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Model size</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>69903</td>
+<td>69067</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>43323</td>
+<td>42761</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>189136</td>
+<td>188300</td>
+<td>2.5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5B1a:</strong> Size of models used for unimodal audio classification on the seen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Conv block - 1</strong></th>
+<th></th>
+<th><strong>Conv block - 2</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>n</td>
+<td>k</td>
+<td>n</td>
+<td>k</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>16</td>
+<td>5</td>
+<td>256</td>
+<td>9</td>
+<td>24</td>
+<td>28</td>
+<td>27</td>
+<td>22</td>
+<td>17</td>
+<td>32</td>
+<td>20</td>
+<td>10</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>32</td>
+<td>7</td>
+<td>128</td>
+<td>7</td>
+<td>19</td>
+<td>14</td>
+<td>10</td>
+<td>28</td>
+<td>24</td>
+<td>16</td>
+<td>29</td>
+<td>3</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.4</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>128</td>
+<td>9</td>
+<td>128</td>
+<td>10</td>
+<td>24</td>
+<td>28</td>
+<td>27</td>
+<td>26</td>
+<td>28</td>
+<td>24</td>
+<td>29</td>
+<td>3</td>
+<td>3</td>
+<td>Max</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5B1b:</strong> Hyperparameters of models used for unimodal audio classification on the seen singer split</p>
+<h2 id="tuned-hyperparameters-for-audio-classification-task-on-unseen-singer-split">Tuned hyperparameters for audio classification task on unseen singer split</h2>
+<p>Information of the model and hyperparameters for the <strong>fourth column (Unseen singer, Audio) in Table 4.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Model size</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>18698</td>
+<td>18244</td>
+<td>0.41</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>9773</td>
+<td>9431</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>20298</td>
+<td>19790</td>
+<td>0.43</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5B2a:</strong> Size of models used for unimodal audio classification on the unseen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Conv block - 1</strong></th>
+<th></th>
+<th><strong>Conv block - 2</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>n</td>
+<td>k</td>
+<td>n</td>
+<td>k</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>8</td>
+<td>3</td>
+<td>64</td>
+<td>7</td>
+<td>27</td>
+<td>32</td>
+<td>31</td>
+<td>32</td>
+<td>32</td>
+<td>17</td>
+<td>11</td>
+<td>10</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.6</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>32</td>
+<td>3</td>
+<td>8</td>
+<td>9</td>
+<td>11</td>
+<td>12</td>
+<td>32</td>
+<td>15</td>
+<td>20</td>
+<td>32</td>
+<td>20</td>
+<td>5</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.6</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>8</td>
+<td>9</td>
+<td>128</td>
+<td>5</td>
+<td>24</td>
+<td>7</td>
+<td>30</td>
+<td>32</td>
+<td>5</td>
+<td>30</td>
+<td>14</td>
+<td>10</td>
+<td>5</td>
+<td>Max</td>
+<td>0.3</td>
+<td>Avg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5B2b:</strong> Size of models used for unimodal audio classification on the unseen singer split</p>
+<h2 id="tuned-hyperparameters-for-early-fusion-classification">Tuned hyperparameters for early fusion classification</h2>
+<p>Information of the model and hyperparameters for <strong>model type C in Table 5</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Model size</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>22341</td>
+<td>21815</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>21570</td>
+<td>21044</td>
+<td>0.42</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>23397</td>
+<td>22879</td>
+<td>0.45</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5Ca:</strong> Size of models used for source fusion multimodal classification on the seen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Conv block - 1</strong></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>n</td>
+<td>k</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>128</td>
+<td>7</td>
+<td>14</td>
+<td>22</td>
+<td>10</td>
+<td>27</td>
+<td>32</td>
+<td>30</td>
+<td>14</td>
+<td>3</td>
+<td>3</td>
+<td>Avg</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>128</td>
+<td>3</td>
+<td>21</td>
+<td>14</td>
+<td>25</td>
+<td>6</td>
+<td>28</td>
+<td>32</td>
+<td>30</td>
+<td>7</td>
+<td>3</td>
+<td>Max</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>128</td>
+<td>7</td>
+<td>24</td>
+<td>21</td>
+<td>27</td>
+<td>30</td>
+<td>17</td>
+<td>24</td>
+<td>12</td>
+<td>7</td>
+<td>5</td>
+<td>Max</td>
+<td>0.5</td>
+<td>Avg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5Cb:</strong> Hyperparameters of models used for source fusion multimodal classification on the seen singer split</p>
+<h2 id="tuned-hyperparameters-for-latent-fusion-classification">Tuned hyperparameters for latent fusion classification</h2>
+<p>Information of the model and hyperparameters for <strong>model type D in Table 5</strong> of our paper.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Model size</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td># total hparams</td>
+<td># trainable hparams</td>
+<td>Mean model size (MB)</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>108876</td>
+<td>65738</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>88934</td>
+<td>54230</td>
+<td>0.99</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>220897</td>
+<td>48761</td>
+<td>1.5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5Da:</strong> Size of models used for latent fusion multimodal classification on the seen singer split</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Pooling + 1D convolution</strong>*</th>
+<th></th>
+<th></th>
+<th><strong>Inception block</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th><strong>Pooling layer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>Audio Pool type</td>
+<td>Video Pool type</td>
+<td>n</td>
+<td>n11</td>
+<td>n21</td>
+<td>n31</td>
+<td>n32</td>
+<td>n41</td>
+<td>n42</td>
+<td>n43</td>
+<td>k</td>
+<td>p</td>
+<td>P</td>
+<td>dr</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>Max</td>
+<td>Max</td>
+<td>128</td>
+<td>26</td>
+<td>22</td>
+<td>12</td>
+<td>31</td>
+<td>21</td>
+<td>22</td>
+<td>29</td>
+<td>3</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.4</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>Max</td>
+<td>Max</td>
+<td>128</td>
+<td>24</td>
+<td>18</td>
+<td>31</td>
+<td>13</td>
+<td>29</td>
+<td>32</td>
+<td>29</td>
+<td>5</td>
+<td>3</td>
+<td>Max</td>
+<td>0.6</td>
+<td>Avg</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>Avg</td>
+<td>Avg</td>
+<td>128</td>
+<td>23</td>
+<td>8</td>
+<td>26</td>
+<td>19</td>
+<td>23</td>
+<td>29</td>
+<td>11</td>
+<td>7</td>
+<td>5</td>
+<td>Avg</td>
+<td>0.4</td>
+<td>Avg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5Db:</strong> Hyperparameters of models used for latent fusion multimodal classification on the seen singer split</p>
+<p>* Pooling is done on the audio and video conv layer outputs separately to make them the same length to allow for their depth wise concatenation. 1D convolution is then used on the output of the audio and video conv blocks to reduce the size of the data going into the inception block.</p>
+<h2 id="tuned-hyperparameters-for-late-fusion">Tuned hyperparameters for Late fusion</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Split</strong></th>
+<th><strong>Model</strong></th>
+<th><strong>Hyperparameter name</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Num_Estimators</td>
+<td>Max_depth</td>
+<td>Max_features</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>Random forest</td>
+<td>50</td>
+<td>7</td>
+<td>‘sqrt’</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>Random forest</td>
+<td>75</td>
+<td>5</td>
+<td>‘sqrt’</td>
+</tr>
+<tr>
+<td>SCh</td>
+<td>Random forest</td>
+<td>50</td>
+<td>7</td>
+<td>‘sqrt’</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table S5E:</strong> Hyperparameters of models used for late fusion multimodal classification on the seen singer split</p>
+<h1 id="confusion-matrices-of-the-results">Confusion matrices of the results</h1>
+<p><img src="exp-CMs-all.png" alt=""></p>
+<p><strong>Figure S3 (a):</strong> Confusion matrices of predictions made from audio, video and audio-video modalities. Numbers are represented as percentages of the total number of samples shown in the matrix. The rows indicate the train-val split from which the validation data was used to generate the confusion matrix i.e. AG, CC, SCh data splits in the ‘seen split‘ case. The columns indicate unimodal audio, unimodal video and multimodal (corresponding to latent fusion - model D in Table 5 of the paper) models. Fig 5 in the paper (same as Figure S3 (b) below) is derived from this figure by combining the predictions across all 3 data splits.</p>
+<p><img src="exp-CMs-perc.png" alt=""></p>
+<p><strong>Figure S3 (b):</strong> Confusion matrices of predictions made from audio, video and audio-video modalities. Numbers are represented in percentages of the total number of test examples across the three singers combined. Same as Figure 5 in the paper.</p>
 
+    </div>
 </div>
 </div>
-
+</a> 
         </div>
       </div>
     </div>
@@ -135,17 +1248,17 @@
   </div>
 
   <div class="sub-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="sub-footer-inner">
-          <ul>
-            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <ul>
+                        <li class="zerostatic"><a href="https://www.ee.iitb.ac.in/course/~daplab/">Digital Audio Processing Lab, IIT Bombay</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
   
@@ -154,7 +1267,7 @@
   
 
   
-  <script type="text/javascript" src="/gesture_analysis_demo/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
   
 
   
