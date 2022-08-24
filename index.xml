@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</title>
-    <link>/</link>
+    <link>snnithya.github.io/</link>
     <description>Recent content in Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="snnithya.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>snnithya.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>snnithya.github.io/about/</guid>
       <description>This project was carried out by the Digital Audio Processing Lab, IIT Bombay and Durham University. The authors are Dr. Martin Clayton, Dr. Preeti Rao, Nithya Shikarpur, Sujoy Roychowdhary, Jin Li.</description>
     </item>
     
     <item>
       <title>Dataset</title>
-      <link>/suppl/dataset/</link>
+      <link>snnithya.github.io/suppl/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/suppl/dataset/</guid>
+      <guid>snnithya.github.io/suppl/dataset/</guid>
       <description>This page contains details about the dataset used and information about our train-val splits.</description>
     </item>
     
     <item>
       <title>Experiments &amp; Results</title>
-      <link>/suppl/experiments/</link>
+      <link>snnithya.github.io/suppl/experiments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/suppl/experiments/</guid>
+      <guid>snnithya.github.io/suppl/experiments/</guid>
       <description>This page contains more information about our experiments and results.</description>
     </item>
     
     <item>
       <title>Qualitative analysis of our results</title>
-      <link>/suppl/commentaries/</link>
+      <link>snnithya.github.io/suppl/commentaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/suppl/commentaries/</guid>
+      <guid>snnithya.github.io/suppl/commentaries/</guid>
       <description>This page contains qualitative commentaries about selected videos from our dataset along with the raga predictions from our model.</description>
     </item>
     
