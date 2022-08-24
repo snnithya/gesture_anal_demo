@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</title>
-    <link>snnithya.github.io/</link>
+    <link>https://snnithya.github.io/gesture_analysis_demo/</link>
     <description>Recent content in Raga classification from vocal performance using multimodal analysis on Hugo Whisper Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="snnithya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://snnithya.github.io/gesture_analysis_demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>snnithya.github.io/about/</link>
+      <link>https://snnithya.github.io/gesture_analysis_demo/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>snnithya.github.io/about/</guid>
+      <guid>https://snnithya.github.io/gesture_analysis_demo/about/</guid>
       <description>This project was carried out by the Digital Audio Processing Lab, IIT Bombay and Durham University. The authors are Dr. Martin Clayton, Dr. Preeti Rao, Nithya Shikarpur, Sujoy Roychowdhary, Jin Li.</description>
     </item>
     
     <item>
       <title>Dataset</title>
-      <link>snnithya.github.io/suppl/dataset/</link>
+      <link>https://snnithya.github.io/gesture_analysis_demo/suppl/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>snnithya.github.io/suppl/dataset/</guid>
+      <guid>https://snnithya.github.io/gesture_analysis_demo/suppl/dataset/</guid>
       <description>This page contains details about the dataset used and information about our train-val splits.</description>
     </item>
     
     <item>
       <title>Experiments &amp; Results</title>
-      <link>snnithya.github.io/suppl/experiments/</link>
+      <link>https://snnithya.github.io/gesture_analysis_demo/suppl/experiments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>snnithya.github.io/suppl/experiments/</guid>
+      <guid>https://snnithya.github.io/gesture_analysis_demo/suppl/experiments/</guid>
       <description>This page contains more information about our experiments and results.</description>
     </item>
     
     <item>
       <title>Qualitative analysis of our results</title>
-      <link>snnithya.github.io/suppl/commentaries/</link>
+      <link>https://snnithya.github.io/gesture_analysis_demo/suppl/commentaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>snnithya.github.io/suppl/commentaries/</guid>
+      <guid>https://snnithya.github.io/gesture_analysis_demo/suppl/commentaries/</guid>
       <description>This page contains qualitative commentaries about selected videos from our dataset along with the raga predictions from our model.</description>
     </item>
     
